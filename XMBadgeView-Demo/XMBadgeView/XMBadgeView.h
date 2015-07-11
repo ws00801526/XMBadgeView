@@ -134,9 +134,9 @@ typedef NS_ENUM(NSUInteger, XMBadgeViewAlignment)
 
 /**
  *
- * BadgeView 最小宽度,避免使用过小字体时 badgeView过小
+ * BadgeView 最小宽度,避免使用过小字体时 badgeView过小 默认18.0f
  *
- * The minimum width of a badge circle. We need this to avoid elipse shapes when using small fonts.
+ * The minimum width of a badge circle. We need this to avoid elipse shapes when using small fonts. Default is 18.0f
  */
 @property (nonatomic, assign) CGFloat badgeMinWidth UI_APPEARANCE_SELECTOR;
 

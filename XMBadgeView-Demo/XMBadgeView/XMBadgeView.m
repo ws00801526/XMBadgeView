@@ -73,6 +73,8 @@ static const CGFloat XMBadgeViewTextSideMargin = 8.0f;
     badgeViewAppearanceProxy.badgeStrokeWidth = 0.0f;
     badgeViewAppearanceProxy.badgeStrokeColor = badgeViewAppearanceProxy.badgeBackgroundColor;
     
+    badgeViewAppearanceProxy.badgeMinWidth = 18.0f;
+    
     badgeViewAppearanceProxy.backgroundColor =  [UIColor clearColor];
 }
 
@@ -139,8 +141,8 @@ static const CGFloat XMBadgeViewTextSideMargin = 8.0f;
     const CGFloat textWidth = [self sizeOfTextForCurrentSettings].width;
     const CGFloat textHeight = [self sizeOfTextForCurrentSettings].height;
     const CGFloat marginToDrawInside = [self marginToDrawInside];
-    const CGFloat viewWidth = MAX(_badgeMinWidth, textWidth + XMBadgeViewTextSideMargin + (marginToDrawInside * 2));
-    const CGFloat viewHeight = MAX(24, textHeight + (marginToDrawInside * 2));
+    const CGFloat viewWidth = MAX(self.badgeMinWidth, textWidth + XMBadgeViewTextSideMargin + (marginToDrawInside * 2));
+    const CGFloat viewHeight = MAX(self.badgeMinWidth, textHeight + (marginToDrawInside * 2));
     newFrame.size.width = MAX(viewWidth, viewHeight);
     newFrame.size.height = MAX(viewWidth, viewHeight);
     
