@@ -38,6 +38,8 @@
     UIView *greenView = [[UIView alloc] initWithFrame:CGRectMake(30, 80, 100, 100)];
     greenView.userInteractionEnabled = YES;
     greenView.backgroundColor = [UIColor greenColor];
+    
+    
     [self.view addSubview:greenView];
     
     XMBadgeView *greenBadgeView = [[XMBadgeView alloc] initWithAttachView:greenView alignment:XMBadgeViewAlignmentTopRight];
@@ -51,8 +53,6 @@
     XMBadgeView *yellowBadgeView = [[XMBadgeView alloc] initWithParentView:yellowView alignment:XMBadgeViewAlignmentCenter];
     [yellowBadgeView setPanable:YES];
     [yellowBadgeView setBadgeText:@"79"];
-    
-    
     
 }
 

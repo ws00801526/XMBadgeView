@@ -25,6 +25,8 @@ typedef NS_ENUM(NSUInteger, XMBadgeViewAlignment)
 
 @interface XMBadgeView : UIView<UIAppearance>
 
+- (void)reset;
+
 /**
  *  显示文字
  */

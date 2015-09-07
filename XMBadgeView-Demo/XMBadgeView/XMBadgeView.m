@@ -466,6 +466,13 @@ static const CGFloat XMBadgeViewTextSideMargin = 8.0f;
     }
 }
 
+
+- (void)handleTap:(UITapGestureRecognizer *)tap{
+    [self reset];
+    self.hidden = YES;
+    [self removeFromSuperview];
+}
+
 #pragma mark - Private
 
 - (void)setUp{
@@ -474,6 +481,9 @@ static const CGFloat XMBadgeViewTextSideMargin = 8.0f;
     
     UIPanGestureRecognizer *panGes = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePan:)];
     [self addGestureRecognizer:panGes];
+    
+    UITapGestureRecognizer *tapGes = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap:)];
+    [self addGestureRecognizer:tapGes];
     
 }
 
