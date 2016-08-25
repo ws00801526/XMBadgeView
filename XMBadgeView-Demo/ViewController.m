@@ -38,12 +38,10 @@
     UIView *greenView = [[UIView alloc] initWithFrame:CGRectMake(30, 80, 100, 100)];
     greenView.userInteractionEnabled = YES;
     greenView.backgroundColor = [UIColor greenColor];
-    
-    
     [self.view addSubview:greenView];
     
     XMBadgeView *greenBadgeView = [[XMBadgeView alloc] initWithAttachView:greenView alignment:XMBadgeViewAlignmentTopRight];
-    [greenBadgeView setBadgeText:@"31"];
+    [greenBadgeView setBadgeText:@""];
     
     //测试使用initParentView 添加badgeView
     UIView *yellowView = [[UIView alloc] initWithFrame:CGRectMake(30, 200, 120, 120)];

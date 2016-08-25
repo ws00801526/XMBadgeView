@@ -348,7 +348,7 @@ static const CGFloat XMBadgeViewTextSideMargin = 8.0f;
 
 - (void)drawRect:(CGRect)rect
 {
-    const BOOL anyTextToDraw = (self.badgeText.length > 0);
+    const BOOL anyTextToDraw = YES;
     
     if (anyTextToDraw)
     {
